@@ -35,7 +35,7 @@ public class DataHelper {
     }
 
     public static VerificationCode getValidVerificationCode() {
-        String codeSQL = "SELECT * FROM auth_codes ORDER BY created DESC LIMIT 1;";
+        String codeSQL = "SELECT code FROM auth_codes ORDER BY created DESC LIMIT 1;";
         val runner = new QueryRunner();
         String code = null;
         try (

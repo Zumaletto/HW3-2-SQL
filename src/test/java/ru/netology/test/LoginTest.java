@@ -27,7 +27,6 @@ public class LoginTest {
         val verificationPage = loginPage.validLogin(DataHelper.getValidUser());
         val dashboardPage = verificationPage.validVerify(DataHelper.getValidVerificationCode());
         dashboardPage.dashboardVisible();
-
     }
 
     @Test
